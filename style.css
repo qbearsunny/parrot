@@ -1,7 +1,11 @@
-*{
+body{
     font-family: 'Abyssinica SIL', serif;
     font-family: 'Bitter', serif;
     background-color: #f5f0bb;
+}
+
+#wrapper{
+    background-color: #b9e8f8;;
 }
 
 h2{color:#73a9ad;}
@@ -106,3 +110,17 @@ a:hover{color:#c08704}
     text-decoration: none;
     margin-left: 30px;
 }
+
+.video{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+#evil{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 50;
+}
+
+#evil:hover{width: 80%;}
