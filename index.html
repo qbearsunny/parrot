@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -17,26 +19,46 @@
     <div class="grid-container">
         <div class="logo">
             <a href="index.html">
-                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_d6YcaL.json"  background="transparent"  speed="1.2"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+                <lottie-player id="animation" src="https://assets10.lottiefiles.com/packages/lf20_d6YcaL.json" background="transparent"  speed="1"  style="width: 150px; height: 150px;" hover loop></lottie-player>
                 <p style="24px"><strong>Parrot</strong></p>
             </a>
         </div>
 
         <div class="session">
             <ul class="navbar">
-                <li><a href="#Parrot">Parrot</a></li>
-                <li><a href="#Characteristic">Characteristic features</a></li>
-                <li><a href="#diets">Parrots' diets</a></li>
-                <li><a href="#article">Article</a></li>
+                <li><a href="#Parrot"><i class="fa-solid fa-dove"></i> Parrot</a></li>
+                <li><a href="#Characteristic"><i class="fa-solid fa-feather"></i> Characteristic features</a></li>
+                <li><a href="#diets"><i class="fa-solid fa-bowl-food"></i> Parrots' diets</a></li>
+                <li><a href="#article"><i class="fa-solid fa-newspaper"></i> Article</a></li>
             </ul>
         </div>
 
         <div class="button">
             <ul>
-                <li><a href="cockatiel.html"><img src="images/cockatiel.jpeg" width="100%" height="100%" /></a></li>
-                <li><a href="#"><img src="images/african-grey.jpeg" width="100%" height="100%" /></a></li>
-                <li><a href="#"><img src="images/budgie.jpeg" width="100%" height="100%" /></a></li>
-                <li><a href="#"><img src="images/red_macaw.jpeg" width="100%" height="100%" /></a></li>
+                <li>
+                    <a href="cockatiel.html">
+                        <img src="images/cockatiel.jpeg" width="100%" height="100%" />
+                        <div class="imgcaption">Cockatiel</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="african-grey.html">
+                        <img src="images/african-grey.jpeg" width="100%" height="100%" />
+                        <div class="imgcaption">African-grey</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/budgie.jpeg" width="100%" height="100%" />
+                        <div class="imgcaption">Budgie</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/red_macaw.jpeg" width="100%" height="100%" />
+                        <div class="imgcaption">Macaw</div>
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -52,7 +74,7 @@
         </div>
 
         <div class="gallery">
-            <img src="images/tran_macaw.png" height="75%"/>
+            <img src="images/tran_macaw.png" max-width="100%" height="auto" />
         </div>
 
         <div class="article" id="article">

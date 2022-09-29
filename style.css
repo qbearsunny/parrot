@@ -8,6 +8,10 @@ body{
     background-color: #b9e8f8;;
 }
 
+#grey{
+    background-color: rgba(129, 129, 129, 0.5);
+}
+
 h2{color:#73a9ad;}
 
 a:link{color: rgb(80, 9, 155);}
@@ -36,6 +40,13 @@ a:hover{color:#c08704}
     margin-left: 50%;
     margin-right: 50%;
     transform: translateX(-50%); 
+}
+
+#animation:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
 }
 
 .session{
@@ -81,10 +92,25 @@ a:hover{color:#c08704}
     border-radius: 5%;
     width: 200px;
     margin: 20px 0;
-    /* height: 150px; */
+} 
+
+/* img caption */
+.button li{
+    position: relative;
+    display: block;
+}
+
+.imgcaption{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    color: #fff;
+    font-size: 16pt;
 }
 
 .button img:hover{opacity: 1;}
+.button a:hover{font-weight: bold;}
+.imgcaption:hover{color: rgb(255, 255, 255);}
 
 .content{
     grid-row: 3 / 4;
@@ -120,7 +146,37 @@ a:hover{color:#c08704}
     position: fixed;
     bottom: 0px;
     left: 0;
-    z-index: 50;
+    z-index: 50;  
 }
 
-#evil:hover{width: 80%;}
+#evil:hover{
+    animation-name: big;
+    animation-duration: 0.5s;    /*動畫持續時間，單位為秒*/
+    animation-delay: 0s;    /*動畫延遲開始時間*/
+    animation-iteration-count: 1;    /*動畫次數，infinite 為無限次*/ 
+    animation-fill-mode: forwards;   /*當動畫結束時，可以停在最後一個影格上*/
+}
+
+@keyframes big {
+    from { width: 150px; }
+    to { width:70%; }
+}
+
+#evil:not(:hover){
+    animation-name: small;
+    animation-duration: 0.5s;    /*動畫持續時間，單位為秒*/
+    animation-delay: 0s;    /*動畫延遲開始時間*/
+    animation-iteration-count: 1;    /*動畫次數，infinite 為無限次*/ 
+    animation-fill-mode: forwards;
+}
+
+@keyframes small {
+    from { width: 70%; }
+    to { width: 150px; }
+}
+
+/* #evil:hover{
+    transform: scale(5, 5);
+    margin-left: 10%;
+    margin-bottom: 10%; 
+} */
